@@ -1,0 +1,16 @@
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
+#zmodload zsh/zprof
+
+eval "$(direnv hook zsh)"
+. $HOME/.asdf/asdf.sh
+eval $(OTTO_INTERACTION_MODE=headless otto autocomplete script zsh 2>/dev/null)
+
+# AWSume alias to source the AWSume script
+alias awsume="source awsume"

@@ -1,0 +1,10 @@
+[user]
+	email = dvicory@gmail.com
+	name = Daniel Vicory
+	signingkey = /Users/daniel.vicory/.ssh/id_rsa.pub
+[core]
+	excludesfile = /Users/daniel.vicory/.gitignore
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
